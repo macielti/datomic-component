@@ -1,4 +1,4 @@
-(defproject datomic-component "1.0.0"
+(defproject com.github.macielti/datomic-component "1.0.0"
   :description "Datomic Component"
   :url "https://github.com/macielti/datomic-component"
 
