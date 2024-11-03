@@ -35,14 +35,14 @@
                    :entity   entity}
                   (component.datomic/transact-and-lookup-entity! :example/id entity connection))))))
 
-(def config {:common-clj.integrant-components.datomic/datomic {:schemas    minimal-schema-for-test
-                                                               :components {:config {:datomic-uri (str "datomic:mem://" (random-uuid))}}}})
+(def config {::component.datomic/datomic {:schemas    minimal-schema-for-test
+                                          :components {:config {:datomic-uri (str "datomic:mem://" (random-uuid))}}}})
 
 (s/deftest datomic-integrant-component-test
   (let [system (ig/init config)
-        connection (:common-clj.integrant-components.datomic/datomic system)]
+        connection (:datomic-component.core/datomic system)]
     (testing "Should be able to init a system with datomic component"
-      (is (match? {:common-clj.integrant-components.datomic/datomic #(= (type %) LocalConnection)}
+      (is (match? {:datomic-component.core/datomic #(= (type %) LocalConnection)}
                   system)))
     (testing "Should be able to use the initiated datomic component to perform database operations"
       (is (match? {:tx-data seqable?}
