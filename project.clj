@@ -9,7 +9,13 @@
             [com.github.liquidz/antq "RELEASE"]]
 
   :dependencies [[org.clojure/clojure "1.11.1"]
-                 [hashp "0.2.2"]]
+                 [com.taoensso/timbre "6.6.1"]
+                 [diehard "0.11.12"]
+                 [hashp "0.2.2"]
+                 [prismatic/schema "1.4.1"]
+                 [nubank/matcher-combinators "3.9.1"]
+                 [com.datomic/peer "1.0.7187"]
+                 [integrant "0.11.0"]]
 
   :profiles {:dev {:resource-paths ^:replace ["test/resources"]
 
