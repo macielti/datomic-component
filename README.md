@@ -1,10 +1,6 @@
-# datomic-component
+# Datomic Component
 
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
+Datomic Component is a library that provides a Datomic component for use with the Integrant library.
 
 ## License
 
