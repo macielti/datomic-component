@@ -5,6 +5,12 @@ of [keepachangelog.com](http://keepachangelog.com/).
 
 ## Unreleased
 
+## 1.0.1 - 2024-11-05
+
+### Changed
+
+- Bump dependencies.
+
 ## 1.0.0 - 2024-11-02
 
 ### Added
